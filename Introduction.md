@@ -28,6 +28,3 @@ Angular is a **TypeScript-based open-source web application framework** develope
 * Real-time apps (like chat or collaboration tools)
 * E-commerce websites
 * Mobile apps using **Ionic Framework**
-
-## Components 
-Components are the main building blocks of Angular applications. Each component represents a part of a larger web page. Organizing an application into components helps provide structure to your project, clearly separating code into specific parts that are easy to maintain and grow over time.
