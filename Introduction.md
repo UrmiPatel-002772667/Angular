@@ -28,3 +28,12 @@ Angular is a **TypeScript-based open-source web application framework** develope
 * Real-time apps (like chat or collaboration tools)
 * E-commerce websites
 * Mobile apps using **Ionic Framework**
+
+# Frameworks 
+- contains set of libraries
+- ex. Angular, .net, expressjs
+
+## Libraries 
+- perform specific operation
+- combine multiple libraries to build apps
+- ex. react, momentjs
