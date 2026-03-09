@@ -1,4 +1,6 @@
+
 # Component
+
 - Building block of Angular
 - Each component represents a part of a larger web page.
 - Organizing an application into components helps provide structure to your project, clearly separating code into specific parts that are easy to maintain and grow over time  
