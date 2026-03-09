@@ -59,7 +59,29 @@ export class ShippingMethodPicker {
   }
 }
 ```
+# templates 
 
+# Directives 
+- used to change the behavior and appearance of DOM element
+- can implement all lifecycle hooks
+- can not have template
+- types:
+	- Structural - change DOM layout by adding or removing DOM elements, which may give you performance issues
+ 	- Attribute - change the appearance or behavior of an element, component or another directive
+  	- Components - used with template (common directive type)	
+- Built-In attribute directives:
+	- listen to and modift the behavior of other HTML elements, attributes, properties and componenets
+  - add to component's `imports` list
+  - `NgIf`
+  - `NgFor`
+  - `NgSwitch`
+ 	- `NgClass`
+    - Adds and removes a set of CSS classes
+  - `NgStyle`
+    - Adds and removes a set of HTML styles
+ 	- `NgModel`
+    - Adds two-way data binding to an HTML form element
+  
 # Component
 
 - Building block of Angular
