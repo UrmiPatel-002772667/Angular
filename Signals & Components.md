@@ -72,16 +72,51 @@ export class ShippingMethodPicker {
 - Built-In attribute directives:
 	- listen to and modift the behavior of other HTML elements, attributes, properties and componenets
   - add to component's `imports` list
-  - `NgIf`
-  - `NgFor`
-  - `NgSwitch`
- 	- `NgClass`
+  - `@if(){}`
+  - `@for(){}`
+  - `*@switch(){@case(){}@default{}}`
+  - `NgClass`
     - Adds and removes a set of CSS classes
   - `NgStyle`
     - Adds and removes a set of HTML styles
- 	- `NgModel`
+  - `NgModel`
     - Adds two-way data binding to an HTML form element
-  
+
+# Pipes
+- Used for data transformation
+- pipes don't change actual object
+- Built in Pipes:
+	- DatePipe
+	- UpperCasePipe
+	- LowerCasePipe
+	- CurrencyPipe
+	- DecimalPipe
+	- PercentPipe
+	- JsonPipe
+	- SlicePipe
+	- AysncPipe 
+
+# component communication 
+scenario where two or more components needs to interact 
+Ways for Component COmunication: 
+- Using @Input and @Output
+- using @ViewChild and @ContentChild
+- using Services
+
+# Lifecycle Hooks
+- component instance has lifecycle hooks which can help you to hook into different events of components
+- lifecycle ends when component is destroyed
+
+	- ngOnChanges
+	- ngOnInit
+	- ngDoCheck
+	- ngAfterContentInit
+	- ngAfterContentChecked
+	- ngAfterViewInit
+	- ngAfterViewChecked
+	- ngOnDestroy
+
+
 # Component
 
 - Building block of Angular
