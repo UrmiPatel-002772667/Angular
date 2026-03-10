@@ -116,6 +116,12 @@ Ways for Component COmunication:
 	- ngAfterViewChecked
 	- ngOnDestroy
 
+# Dependency Injection
+- its a service or object that needed by classes to perform some function
+- its a design pattern
+- angular has built in dependency injection support
+- Providers: claa-based, value, factory
+- 
 
 # Component
 
