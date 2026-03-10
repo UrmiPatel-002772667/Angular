@@ -59,28 +59,6 @@ export class ShippingMethodPicker {
   }
 }
 ```
-# templates 
-
-# Directives 
-- used to change the behavior and appearance of DOM element
-- can implement all lifecycle hooks
-- can not have template
-- types:
-	- Structural - change DOM layout by adding or removing DOM elements, which may give you performance issues
- 	- Attribute - change the appearance or behavior of an element, component or another directive
-  	- Components - used with template (common directive type)	
-- Built-In attribute directives:
-	- listen to and modift the behavior of other HTML elements, attributes, properties and componenets
-  - add to component's `imports` list
-  - `@if(){}`
-  - `@for(){}`
-  - `*@switch(){@case(){}@default{}}`
-  - `NgClass`
-    - Adds and removes a set of CSS classes
-  - `NgStyle`
-    - Adds and removes a set of HTML styles
-  - `NgModel`
-    - Adds two-way data binding to an HTML form element
 
 # Pipes
 - Used for data transformation
@@ -121,26 +99,3 @@ Ways for Component COmunication:
 - its a design pattern
 - angular has built in dependency injection support
 - Providers: claa-based, value, factory
-- 
-
-# Component
-
-- Building block of Angular
-- Each component represents a part of a larger web page.
-- Organizing an application into components helps provide structure to your project, clearly separating code into specific parts that are easy to maintain and grow over time  
-
-- Example:
-  
-    ```ts
-    @component
-     ({
-        selector: 'profile',
-        template: ``<h1>Abc</h1>``
-     })	
-  
-    export class profiles(){}
-    ```
-
-	- you can compose multiple components togeter by using `imports: [component_name]`
-
-
