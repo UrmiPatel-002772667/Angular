@@ -208,3 +208,6 @@ A component can bind properties, attributes, styles and events to its host eleme
 })
 ```
 
+## the @HostBInding and @HostListener decorators
+
+
