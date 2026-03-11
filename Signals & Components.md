@@ -20,19 +20,6 @@ Ways for Component COmunication:
 - using @ViewChild and @ContentChild
 - using Services
 
-# Lifecycle Hooks
-- component instance has lifecycle hooks which can help you to hook into different events of components
-- lifecycle ends when component is destroyed
-
-	- ngOnChanges
-	- ngOnInit
-	- ngDoCheck
-	- ngAfterContentInit
-	- ngAfterContentChecked
-	- ngAfterViewInit
-	- ngAfterViewChecked
-	- ngOnDestroy
-
 # Dependency Injection
 - its a service or object that needed by classes to perform some function
 - its a design pattern
