@@ -5,14 +5,16 @@
 - types:
 	- Structural - change DOM layout by adding or removing DOM elements, which may give you performance issues
  	- Attribute - change the appearance or behavior of an element, component or another directive
-  - Components - used with template (common directive type)	
+  	- Components - used with template (common directive type)
+  	  
+## Structural Directives: 
+  - `*NgIf` `@if(){}` - Conditionally shows or hides element based on a boolean condition
+  - `*NgFor` `@for(){}` - Repeat a node for each item in a list
+  - `*NgSwitch` `*@switch(){@case(){}@default{}}` - Adds or removes DM+OM elements based on the value of a switch expression
 
 ## Built-In attribute directives:
-	- listen to and modift the behavior of other HTML elements, attributes, properties and componenets
-  - add to component's `imports` list
-  - `@if(){}`
-  - `@for(){}`
-  - `*@switch(){@case(){}@default{}}`
+- listen to and modift the behavior of other HTML elements, attributes, properties and componenets
+- add to component's `imports` list
 ### NgClass
 - Adds and removes a set of CSS classes
 - On the element you'd like to style, add [ngClass] and set it equal to an expression.
