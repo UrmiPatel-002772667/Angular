@@ -1,18 +1,3 @@
-
-# Pipes
-- Used for data transformation
-- pipes don't change actual object
-- Built in Pipes:
-	- DatePipe
-	- UpperCasePipe
-	- LowerCasePipe
-	- CurrencyPipe
-	- DecimalPipe
-	- PercentPipe
-	- JsonPipe
-	- SlicePipe
-	- AysncPipe 
-
 # component communication 
 scenario where two or more components needs to interact 
 Ways for Component COmunication: 
