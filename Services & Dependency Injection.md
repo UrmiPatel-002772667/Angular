@@ -66,10 +66,3 @@ getData(){
 **How does it works:**
 1. Register a service with angular using `@injectable` or `@ngModule` decorator
 
-2. 
-# component communication 
-scenario where two or more components needs to interact 
-Ways for Component COmunication: 
-- Using @Input and @Output
-- using @ViewChild and @ContentChild
-- using Services
