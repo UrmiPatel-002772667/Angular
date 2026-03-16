@@ -1,0 +1,13 @@
+<div class="container">
+        <app-reusable [childProperty]="parentProperty"></app-reusable>
+
+    <div class="w-50 p-5 mt-5 mx-auto text-white" style="background-color:  rgb(206, 227, 247);">
+        <h2 class="text-center m-4" style="color: rgb(35, 110, 110);">View User</h2>
+        <div class="form-group m-3">
+            <p style="color: rgb(35, 110, 110);">Name: <b class="text-success">{{userData?.name}}</b></p>
+            <p style="color: rgb(35, 110, 110);">Username: <b class="text-success">{{userData?.username}}</b></p>
+            <p style="color: rgb(35, 110, 110);">Email: <b class="text-success">{{userData?.email}}</b></p>
+        </div>
+        <button class="btn btn-danger btn-lg m-1" (click)="onClose()">Close</button>
+        </div>
+</div>
