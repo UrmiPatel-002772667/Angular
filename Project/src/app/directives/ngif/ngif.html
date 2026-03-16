@@ -1,0 +1,39 @@
+<div class="row text-center">
+    <div class="col-12 m-3">
+        <h3><b>Example of if</b></h3>
+    </div>
+</div>
+<div class="row text-center border">
+    <div class="col-4 border">
+        <div (click)="onClick()">
+        <input type="checkbox"> T&Cs
+        </div>
+        @if(isChecked){
+        <div>
+        <button class="btn btn-success">submit</button>            
+        </div>
+        }
+        
+    </div>
+    <div class="col-4 border">
+        @if(isInput){
+            <input type="text" value="NGIF" class="border">
+        }
+        <button class="btn btn-primary m-2" (click)="showField()">Show</button>            
+        <button class="btn btn-success m-2" (click)="hideField()">Hide</button>                
+
+    </div>
+    <div class="col-4 border">
+        <input type="text" class="m-1 border" [(ngModel)] = "input1">
+        <input type="text" class="m-1 border" [(ngModel)] = "input2">
+        @if(input1 === input2){
+        <div>
+            <h4>Both Value are Equal!</h4>
+        </div>  
+        } @else{
+        <div>
+            <h4>Both Value are not Equal!</h4>
+        </div>
+        }
+    </div>
+</div>
