@@ -1,0 +1,52 @@
+<div class="row text-center">
+    <div class="col-12 m-3">
+        <h3><b>Example of For</b></h3>
+    </div>
+</div>
+<div class="row text-center border">
+    <div class="col-4 border">
+        <select name="" id="" class="p-2 border">
+            @for(emp of employee; track emp.empNum){
+                <option>{{emp.empName}} - {{emp.empEmail}}</option>
+            }     
+        </select>
+    </div>
+    <div class="col-4">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+        </tr>
+        </thead>
+        <tbody>
+            @for(emp of employee; track emp.empNum){
+            <tr>
+                <td>{{emp.empNum}}</td>
+                <td>{{emp.empName}}</td>
+                <td>{{emp.empEmail}}</td>
+                <td>{{emp.empDept}}</td>
+            </tr>
+             }
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4 border">
+      <ol>
+        @for(c of companyList; track c; let f = $first, l = $last, e = $even, o = $odd, i = $index){
+            @if(f == true){
+                <li style="color: green;">{{c}}</li>
+            }@else if (l == true) {
+                <li style="color: blue;">{{c}}</li>
+            }@else {
+                <li>{{c}}</li>
+            }
+        }
+        @empty {
+            No Company Found...
+        }
+      </ol>
+    </div>
+</div>
