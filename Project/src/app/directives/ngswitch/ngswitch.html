@@ -1,0 +1,18 @@
+<div class="row text-center">
+    <div class="col-12 m-3">
+        <h3><b>Example of Switch</b></h3>
+    </div>
+</div>
+<div class="row text-center border">
+    <div class="col-12">
+       <button class="btn btn-success m-1" (click)="set(1)">1st Grade</button>
+       <button class="btn btn-primary m-1" (click)="set(2)">2nd Grade</button>
+       <button class="btn btn-warning m-1" (click)="set(3)">3rd Grade</button> 
+    </div>
+    @switch (grade) {
+        @case (1) {<p>Congratulation on First Grade</p>}
+        @case (2) {<p>Congratulation on Second Grade</p>}
+        @case (3) {<p>Congratulation on Third Grade</p>}
+        @default {<p>No Result Found...</p>}
+    }
+</div>
