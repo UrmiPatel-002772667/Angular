@@ -1,0 +1,30 @@
+<!--Interpolation binding-->
+<div class="text-center m-3">
+    <h3>UserName: {{dummyData.name}}</h3><br>
+    <h4>{{topic}}</h4><br>
+</div>
+
+<!--Property binding-->
+<div class="text-center">
+    <input  class="border border-secondary" type="text" name="" id="" [value]="topic"><br><br>
+    <img  [src]="image" alt="image" style="height: 200px; width: 300px; margin: auto;">
+</div>
+
+<!--Event Binding-->
+<div class="text-center">
+    <button class="btn btn-primary m-3" (click)="onSave()">Save</button>
+    <select class="border border-secondary" (change)="onChange()">
+        <option value="Country">Country</option>
+        <option value="India">India</option>
+        <option value="Spain">Spain</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="France">France</option>
+        <option value="Italy">Italy</option>
+    </select>
+</div>
+
+<!--Two way data binding-->
+<div class="text-center">
+    <input  class="border border-secondary" type="text" [(ngModel)]="random">
+    {{random}}
+</div>
