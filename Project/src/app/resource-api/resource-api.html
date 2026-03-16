@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class="text-center m-4">Resource & rxResource API</h2>
+    <table class="table table-primary table-striped">
+        <thead>
+            <tr>
+                <th class="col-2">User ID</th>
+                <th class="col-2">UserName</th>
+                <th class="col-2">Email</th>
+                <th class="col-3">Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(data of apiData.value(); track data){
+                <tr>
+                    <td>{{data.user_id}}</td>
+                    <td>{{data.username}}</td>
+                    <td>{{data.email}}</td>
+                    <td>{{data.password}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
