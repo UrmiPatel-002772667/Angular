@@ -1,0 +1,22 @@
+<div class="container">
+        <app-reusable [childProperty]="parentProperty"></app-reusable>
+    <form class="w-75 p-5 mt-5 mx-auto" [formGroup] ="updateUserForm" (ngSubmit)="onSubmit()" style="background-color:  rgb(206, 227, 247);">
+        <h2 class="text-center m-4">Update User</h2>
+        <div class="form-group m-3">
+            <label >Name</label>
+            <input type="text" class="form-control" placeholder="Name" formControlName="name">
+        </div>
+        <div class="form-group m-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" placeholder="Username" formControlName="username">
+        </div>
+        <div class="form-group m-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Email" formControlName="email">
+        </div>
+        <div class="text-center m-3">
+            <button class="btn btn-success btn-lg m-1">Update</button>
+            <button class="btn btn-danger btn-lg m-1" (click)="onCancel()">Cancel</button>
+        </div>
+       </form>
+</div>
