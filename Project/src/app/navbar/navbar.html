@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm" style="background-color: #93b8d2;">
+  <div class="container-fluid">
+
+    <a class="navbar-brand fw-bold text-seagreen" routerLink="/">Basics of Angular</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item nav-item-wrapper">
+            <a class="nav-link dropdown-toggle" [class.show]="activeDropdown() === 'User'" (click)="toggleDropdown('User')" role="button">
+                User
+            </a>
+            <ul class="dropdown-menu" [class.show]="activeDropdown() === 'User'">
+                <li class="nav-item">
+                    <a class="dropdown-item" routerLink= "user" (click)="activeDropdown.set(null)">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="dropdown-item" [routerLink]="['profile']" (click)="activeDropdown.set(null)">Profile</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+          <a class="nav-link" routerLinkActive="active" routerLink="/data-binding">Data Binding</a>
+        </li>
+        <li class="nav-item nav-item-wrapper">
+            <a class="nav-link dropdown-toggle" [class.show]="activeDropdown() === 'Directives'" (click)="toggleDropdown('Directives')" role="button">
+                Directives
+            </a>
+            <ul class="dropdown-menu" [class.show]="activeDropdown() === 'Directives'">
+                <li>
+                    <a class="dropdown-item" routerLink= "structural-directive" (click)="activeDropdown.set(null)">Structural Directives</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" [routerLink]="['attribute-directive']" (click)="activeDropdown.set(null)">Attribute Directives</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['pipes']">Pipes</a>
+        </li>
+        <li class="nav-item nav-item-wrapper">
+            <a class="nav-link dropdown-toggle" [class.show]="activeDropdown() === 'Forms'" (click)="toggleDropdown('Forms')" role="button">
+                Forms
+            </a>
+            <ul class="dropdown-menu" [class.show]="activeDropdown() === 'Forms'">
+                <li>
+                    <a class="dropdown-item" routerLink= "tdf" (click)="activeDropdown.set(null)">TDF</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" [routerLink]="['reactive-forms']" (click)="activeDropdown.set(null)">Reactive Forms</a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['crud']">CRUD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['resourceApi']">Resource API</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['reusable']">Reusable</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['parent']">Parent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['storage']">Storage</a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
